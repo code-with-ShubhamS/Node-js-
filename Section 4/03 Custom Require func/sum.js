@@ -1,0 +1,1 @@
+send.sum = (...nums)=>{return nums.reduce((c,acc) => c+acc)};

@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "hii": "ls",
+        "start": "node main.js"
+    },
+    "dependencies": {
+        "axios": "^1.7.7"
+    }
+}

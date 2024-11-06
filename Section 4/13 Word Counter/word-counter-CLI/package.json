@@ -1,0 +1,14 @@
+{
+    "name": "@shubhamcoder/word-counter-cli",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A CLI tool to count words in a file.Developed by shubham semwal S.g.r.r",
+    "main": "index.js",
+    "bin": {
+      "wordcount": "./index.js"
+    },
+    "keywords": ["cli", "word", "count", "node"],
+    "author": "Your Name",
+    "license": "MIT"
+  }
+  
