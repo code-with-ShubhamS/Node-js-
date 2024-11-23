@@ -5,7 +5,7 @@ Sender: Data flows from the application layer to the physical layer, with each l
 
 Receiver: Data flows from the physical layer to the application layer, with each layer removing its header (decapsulation).
 
-# Practically we used TCP/IP Model
+# Practically we used TCP/IP Model 
 
 7. Application Layer
 Purpose: Provides the interface between the network and user applications.
