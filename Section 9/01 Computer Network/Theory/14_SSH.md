@@ -53,3 +53,21 @@ sudo systemctl enable ssh
 sudo ufw allow ssh
 
 
+# Generating a public and private key(use in AWS)
+When we are connecting to server every time it is asking for password . So what we can do is we can simpliy generate a key and store our public key to another system in .ssh/authorization . <br/>
+Next time if you connect to that server it will not ask for password.
+
+# Steps to genrate a private and public key 
+ssh-keygen <br/>
+connect to server with password <br/>
+inside server go to Desktop/.ssh/authorization open it <br/>
+write the public key inside it (using nano command)<br/>
+all done <br/>
+
+# How this work
+1. client generate two key one is public and other is private (C:\Users\DESKTOP\.ssh)
+
+2. Than we connect to that system or server.
+3. In that server inside .ssh/authorization file we can simply write our public key in it.
+ # So
+ After that whenever we try to connect to that server the server public key generate a simple text and encript it and send to clent . Than the client private key encript it and send that text to server. If the server get correct text than clent have server access.
