@@ -1,0 +1,9 @@
+.downloadBtn{
+    background-color: rgb(234, 197, 11)
+}
+.previewBtn{
+    background-color: rgb(231, 106, 106)
+}
+.container{
+    display: flex; gap: 1rem;
+}

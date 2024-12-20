@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Manager</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .file-list {
+      margin: 20px 0;
+    }
+
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      background-color: #fdfdfd;
+    }
+
+    .file-item:hover {
+      background-color: #f1f1f1;
+    }
+
+    .file-item span {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .file-actions a,
+    .file-actions button {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+
+    .file-actions button:hover,
+    .file-actions a:hover {
+      text-decoration: underline;
+    }
+
+    .upload-section {
+      padding: 15px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .upload-section label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .upload-section input[type="file"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .upload-section input[type="text"] {
+      padding: 8px;
+      width: calc(100% - 16px);
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .upload-section button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .upload-section button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      margin-top: 20px;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>File Manager</h1>
+
+  <div class="container">
+    <!-- File List Section -->
+    <div class="file-list">
+      <div class="file-item">
+        <span>ALBEST.docx</span>
+        <div class="file-actions">
+          <a href="#">Open</a>
+          <a href="#">Download</a>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+      <div class="file-item">
+        <span>indesdfgx.html</span>
+        <div class="file-actions">
+          <a href="#">Open</a>
+          <a href="#">Download</a>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+      <div class="file-item">
+        <span>main.txt</span>
+        <div class="file-actions">
+          <a href="#">Open</a>
+          <a href="#">Download</a>
+          <button>Edit</button>
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <label for="file-name">Rename File</label>
+      <input type="text" id="file-name" placeholder="Enter new file name">
+      <button>Rename</button>
+      
+      <label for="file-upload">Upload New File</label>
+      <input type="file" id="file-upload">
+      <button>Upload</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 File Manager. All rights reserved.
+  </div>
+
+</body>
+</html>

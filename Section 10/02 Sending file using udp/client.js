@@ -1,8 +1,6 @@
 import dgram from "node:dgram"
 import { createReadStream } from "node:fs";
 
-
-
 const readStream = createReadStream("C:\\Users\\DESKTOP\\Downloads\\Date Sheet SET-Nov_Dec 2024.pdf",{highWaterMark:1000});
 
 const socket = dgram.createSocket("udp4");
