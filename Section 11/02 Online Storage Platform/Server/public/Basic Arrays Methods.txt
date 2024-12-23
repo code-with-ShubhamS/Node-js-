@@ -1,0 +1,110 @@
+Always try to remove element from the last index of the array because it doesn't change the other element indexes
+
+push() => Push method add the element in the lastIndex of the array . array.Push(1);
+
+pop() => Pop method remove the element from the last index of the array
+ 
+shift() => remove element from the first index;
+
+unshift() => add element at the first index
+
+concat() => array1.concat(array2,array3) Doesn't modify the original array
+
+indexOf() => array.indexOf(element) if element is present in the array then it will return the index and if not present their than it will return -1. for returning true and false use indexOf() >=0 
+
+includes() => includes return true if element is present in the array and return false if it is not present their caseSensitive.
+
+reverse() => it reverse the original array 
+
+sort() => sort the original array on the basis of ASCII value and if the array has string then it will sort it perfectly(all the string value must have uppercase or loweCase) but when the array is number than it will sort it by their first no [0,1,12,14,15,17,2,23,25,26,26,3,35,5]  
+
+slice(startIdx,EndIndx) => didn't modify the original array and return a slice of the array .EndIdx is not included
+
+splice(removeIdx,countElement,addValueOnRemoveIdx) => return a remove element and also changes the original array
+
+countElementInSplice = removeIdx ka bad kitna element delete karna ha aur uski jagah ham addval da dega 
+
+
+
+let months=['jan','feb','mar','april','may','jun','july']
+
+ForEach => Loop return undefine because it didn't return any value 
+
+let capitalMonths=months.forEach((item,index)=>{   
+console.log(item);
+return item.upperCase();
+})
+
+
+Map =>store all the item in to the array and then return it .so here store has all the upperCase MonthsName
+
+let capitalMonts = months.map((item,index,originalArray)=>{   
+console.log(item);
+return item.upperCase();
+})
+
+
+filter=> method is used to filter the array on the basis of some condition
+
+let ans = months.filter((item,index,originalArray)=>{   
+console.log(item);
+return item.length>3;
+})
+['april','july']  o/p
+
+
+Reduced Method => it return the single value and it take one function , and acumulator value if the acumulator value is not present than by default the acumulatore value become the array 0 index val and run from the index 1 so always provide acumulator val
+
+
+let arr=[1,2,3]
+
+arr.reduce((acumulator,currentVal,index,originalArray)=>{
+	return acumulator + curentVal	
+},0)
+
+
+Some => array.some((val,i)=>{return val%2==0}) so some actually return the true value if any of the condition from the array is sayisfy and the loop is terminated at that time .if not then array return false 
+
+
+every => every method is same as some method but the difference is if one  of the condition become false than it will return false and terminated the array
+array.every((val,i)=>{return val%2==0})
+
+
+
+
+Spread Operator =>   Mainly used for copy the element 
+function sum(a, b, c) {
+    return a + b + c;
+}
+
+const nums = [1, 2, 3];
+const result = sum(...nums);
+console.log("Result of sum:", result)
+
+
+Rest operator => used for taking the rest of the element 
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log("Sum:", sum(1, 2, 3, 4, 5)); // Sum: 15
+console.log("Sum:", sum(10, 20)); // Sum: 30
+
+ArrayLike objects are same as array but the difference is we cannot use array Method in arraylike objects ex push,pop.
+
+In programming, a function is a block of reusable code that performs a certain task. Functions can take input arguments and return output values. On the other hand, a method is a function that is associated with an object in object-oriented programming. Methods are functions that are called on objects and can modify or access the object's properties.
+
+
+
+
+
+arguments => arguments is a keyword in js which take all the arguments.it is a arraylike object so we can perform for loop in it .
+But in arrow function we didn't use arguments in it. mostly arguments is not used in function instead of arguments we used rest operator.
+
+function add(){
+let sum=0;
+   for(let i=0;i<arguments.length;i++){
+	sum+=arguments[i];
+}
+return sum;
+}

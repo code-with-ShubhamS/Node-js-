@@ -22,9 +22,9 @@ There are 2 pow 32 unique IP address are their
 IP address are of two types Private and Public
 
 Their is one mistake which is create by scientist .The scientest reserved to much ip address btw 127.0.0.0 to 127.255.255.255 for the local Host which doesn't required.
-
-Wasted nearly 16 lakh ip address. 
-
+```
+Wasted nearly 256×256×256 = 16,777,216 ip address. 
+```
 # Mackaddress cannot be change .The Mac Adress Define when the create the Device
 
 
